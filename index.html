@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Audrey ❤️</title>
+
+    <style>
+      body {
+        background-image: url("https://staticg.sportskeeda.com/editor/2023/04/80071-16813009730713.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes flowIn {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #acda81;
+        padding: 10px 20px;
+        z-index: 1000;
+      }
+
+      .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-list li {
+        margin: 0 15px;
+      }
+
+      .nav-list a {
+        text-decoration: none;
+        color: #840e70;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 20px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .nav-list a:hover {
+        background-color: #840e70;
+        color: #ffffff;
+      }
+
+      .gurt {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 50px;
+        color: #840e70;
+        text-align: center;
+        margin-top: 20%;
+        text-shadow: 2px 2px 4px #000000;
+        animation: flowIn 2s ease-out;
+      }
+
+      .Jimmynaldo {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 20px;
+        color: #840e70;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        padding: 20px;
+        background-color: #acda81;
+        border-radius: 10px;
+        animation: flowIn 2s ease-out 0.5s;
+      }
+
+      .music-button {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 18px;
+        background-color: #acda81;
+        color: #840e70;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 30px;
+        animation: flowIn 2s ease-out 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="photos.html">Photos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1 class="gurt">To Audrey</h1>
+      <p class="Jimmynaldo">
+        Hey Audrey, I just wanted to take a moment to let you know how much I
+        appreciate you. Even though we’re an online couple and haven’t met in
+        person yet, it honestly feels like I’ve known you forever. Every message
+        from you makes my day brighter, and I find myself smiling whenever I see
+        your name pop up. You’re so beautiful — your brown hair, your gorgeous
+        brown skin, and that smile I’ve seen in your photos — you’re stunning.
+        But it’s not just how you look; it’s your vibe, your energy, the way you
+        make me feel seen and understood. That’s what makes you truly special to
+        me. I know distance can make things hard sometimes, but I’m really
+        grateful for what we have. You mean a lot to me, Audrey, and I’m looking
+        forward to more laughs, deep talks, and maybe one day, meeting face to
+        face. Until then, I’ll keep appreciating every second we get to share
+        online. Yours, Ishaan
+      </p>
+
+      <!-- Music Play Button -->
+      <div style="text-align: center">
+        <button
+          onclick="document.getElementById('bgMusic').src += '&autoplay=1'; this.style.display='none';"
+          class="music-button">
+          ▶️ Play Background Music
+        </button>
+      </div>
+    </main>
+
+    <!-- Hidden YouTube Background Music -->
+    <iframe
+      id="bgMusic"
+      width="0"
+      height="0"
+      src="https://www.youtube.com/embed/3XqqkrJENB4?loop=1&playlist=3XqqkrJENB4"
+      title="Cry - Cigarettes After Sex"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+      aria-hidden="true"></iframe>
+  </body>
+</html>
